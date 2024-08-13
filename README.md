@@ -40,8 +40,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Testimonials Grid Section with Sass and Grid Layout](https://www.frontendmentor.io/solutions/testimonials-grid-section-with-sass-and-grid-layout-t8Tp_t8ZY7)
-- Live Site URL: [Frontend Mentor | Testimonials Grid Section](https://vangmanawkairung.github.io/Frontend-Mentor_testimonials-grid-section/)
+- Solution URL: [Result summary card using HTML and CSS (Sass)](https://www.frontendmentor.io/solutions/result-summary-card-using-html-and-css-sass-dZ4a-knrP-)
+- Live Site URL: [Frontend Mentor | Results summary component](https://vangmanawkairung.github.io/Frontend-Mentor_result-summary-component/)
 
 ## My process
 
