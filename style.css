@@ -1,161 +1,142 @@
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap");
 * {
   margin: 0;
   padding: 0;
-  overflow: hidden;
   box-sizing: border-box;
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Hanken Grotesk";
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.red {
+  background-color: rgba(255, 87, 87, 0.1);
+  border-radius: 10px;
+}
+.red p.item-name {
+  color: hsl(0, 100%, 67%);
+}
+
+.yellow {
+  background-color: rgba(255, 176, 31, 0.1);
+  border-radius: 10px;
+}
+.yellow p.item-name {
+  color: hsl(39, 100%, 56%);
+}
+
+.green {
+  background-color: rgba(0, 189, 145, 0.1);
+  border-radius: 10px;
+}
+.green p.item-name {
+  color: hsl(166, 100%, 37%);
+}
+
+.blue {
+  background-color: rgba(17, 37, 212, 0.1);
+  border-radius: 10px;
+}
+.blue p.item-name {
+  color: hsl(234, 85%, 45%);
 }
 
 body {
-  background-color: hsl(0, 0%, 100%);
+  width: 100vw;
+  height: 100vh;
+  background: hsl(0, 0%, 100%);
 }
-body .container .result {
+body main.summary-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 356px 1fr;
+}
+body main.summary-container section.summary-result {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color: hsl(0, 0%, 100%);
-  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 27px 40px 42px 40px;
+  border-radius: 0 0 30px 30px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   text-align: center;
 }
-body .container .result p:first-child {
-  font-size: 18px;
+body main.summary-container section.summary-result h1 {
   color: hsl(221, 100%, 96%);
+  font-weight: 700;
 }
-body .container .result h1 {
+body main.summary-container section.summary-result p.summary-result-in-circle {
+  width: 140px;
+  height: 140px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  border-radius: 50%;
-  background: linear-gradient(180deg, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
-}
-body .container .result h1 span {
-  font-size: 15px;
-  color: hsl(221, 100%, 96%);
-  font-weight: 500;
-}
-body .container .result div h2 {
   color: hsl(0, 0%, 100%);
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  font-weight: 800;
+  border-radius: 50%;
+  padding: 30px;
+  background-image: linear-gradient(hsl(256, 72%, 46%) 10%, hsla(241, 72%, 46%, 0));
+  line-height: 3rem;
 }
-body .container .result div p {
+body main.summary-container section.summary-result p.summary-result-in-circle span {
+  color: hsl(241, 100%, 89%);
+}
+body main.summary-container section.summary-result div h2.summary-detail {
+  color: hsl(0, 0%, 100%);
+}
+body main.summary-container section.summary-result div p {
   color: hsl(221, 100%, 96%);
-  font-size: 13px;
-  font-weight: 500;
 }
-body .container .summary h2 {
-  font-size: 20px;
-  margin-bottom: 5%;
+body main.summary-container section.summary-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
 }
-body .container .summary div {
+body main.summary-container section.summary-category h3 {
+  font-weight: 700;
+}
+body main.summary-container section.summary-category ul {
   width: 100%;
-  height: 13%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body main.summary-container section.summary-category ul li.item {
+  width: 100%;
+  height: 55px;
+  padding: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: hsl(224, 30%, 27%);
-  padding: 0 20px;
-  margin-bottom: 4%;
-  border-radius: 10px;
+  list-style: none;
 }
-body .container .summary div p:first-child {
+body main.summary-container section.summary-category ul li.item p.item-name {
   display: flex;
   align-items: center;
 }
-body .container .summary div p:first-child img {
-  margin-right: 10px;
+body main.summary-container section.summary-category ul li.item p.item-name img.item-icon {
+  margin-right: 13px;
 }
-body .container .summary div p:last-child span {
+body main.summary-container section.summary-category ul li.item p.item-score span {
   color: rgba(48, 59, 90, 0.5);
 }
-body .container .summary div:nth-child(2) {
-  background-color: rgba(255, 87, 87, 0.1);
-}
-body .container .summary div:nth-child(2) p:first-child {
-  color: hsl(0, 100%, 67%);
-}
-body .container .summary div:nth-child(3) {
-  background-color: rgba(255, 176, 31, 0.1);
-}
-body .container .summary div:nth-child(3) p:first-child {
-  color: hsl(39, 100%, 56%);
-}
-body .container .summary div:nth-child(4) {
-  background-color: rgba(0, 189, 145, 0.1);
-}
-body .container .summary div:nth-child(4) p:first-child {
-  color: hsl(166, 100%, 37%);
-}
-body .container .summary div:nth-child(5) {
-  background-color: rgba(17, 37, 212, 0.1);
-}
-body .container .summary div:nth-child(5) p:first-child {
-  color: hsl(234, 85%, 45%);
-}
-body .container .summary button {
-  margin-top: 5%;
+body main.summary-container section.summary-category button {
   width: 100%;
-  height: 13%;
-  border: none;
+  height: 55px;
   outline: none;
+  border: none;
   color: hsl(0, 0%, 100%);
-  background-color: hsl(224, 30%, 27%);
-  border-radius: 50px;
+  border-radius: 25px;
+  background: hsl(224, 30%, 27%);
 }
-body .container .summary button:hover {
-  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-}
-@media (min-width: 375px) and (max-width: 700px) {
-  body .container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  body .container .result {
-    width: 100%;
-    height: 45%;
-    border-radius: 0 0 25px 25px;
-    padding: 30px 50px;
-  }
-  body .container .result h1 {
-    width: 120px;
-    height: 120px;
-  }
-  body .container .summary {
-    width: 100%;
-    height: 55%;
-    padding: 20px;
-  }
-}
-@media (min-width: 701px) {
-  body .container {
-    width: 600px;
-    height: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    border-radius: 20px;
-    display: flex;
-  }
-  body .container .result {
-    width: 50%;
-    height: 100%;
-    padding: 45px;
-    border-radius: 20px;
-  }
-  body .container .result h1 {
-    width: 150px;
-    height: 150px;
-  }
-  body .container .summary {
-    width: 50%;
-    height: 100%;
-    padding: 30px 20px;
-  }
+body main.summary-container section.summary-category button:hover,
+body main.summary-container section.summary-category button:active {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
 }

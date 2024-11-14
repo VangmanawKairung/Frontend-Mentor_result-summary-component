@@ -1,69 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Frontend Mentor | Results summary component</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Results summary component displaying user scores in various categories with a visually appealing layout."
+    />
+
     <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="source/assets/images/favicon-32x32.png"
+      href="./sources/assets/images/favicon-32x32.png"
     />
-    <title>Frontend Mentor | Results summary component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
-      <div class="result">
-        <p>Your Result</p>
-        <h1>76 <span>of 100</span></h1>
+    <main class="summary-container">
+      <section class="summary-result">
+        <h1>Your Result</h1>
+        <p class="summary-result-in-circle">76 <span>of 100</span></p>
         <div>
-          <h2 class="comment">Great</h2>
-          <p role="paragraph">
+          <h2 class="summary-detail">Great</h2>
+          <p>
             You scored higher than 65% of the people who have taken these tests.
           </p>
         </div>
-      </div>
-      <div class="summary">
-        <h2>Summary</h2>
-        <div class="bar">
-          <p class="state">
-            <img
-              src="source/assets/images/icon-reaction.svg"
-              alt="Reaction icon"
-            />Reaction
-          </p>
-          <p class="score">80 <span>/ 100</span></p>
-        </div>
-        <div class="bar">
-          <p class="state">
-            <img
-              src="source/assets/images/icon-memory.svg"
-              alt="Memory icon"
-            />Memory
-          </p>
-          <p class="score">92 <span>/ 100</span></p>
-        </div>
-        <div class="bar">
-          <p class="state">
-            <img
-              src="source/assets/images/icon-verbal.svg"
-              alt="Verbal icon"
-            />Verbal
-          </p>
-          <p class="score">61 <span>/ 100</span></p>
-        </div>
-        <div class="bar">
-          <p class="state">
-            <img
-              src="source/assets/images/icon-visual.svg"
-              alt="Visual icon"
-            />Visual
-          </p>
-          <p class="score">72 <span>/ 100</span></p>
-        </div>
-        <button role="button">Continue</button>
-      </div>
-    </div>
+      </section>
+      <section class="summary-category">
+        <h3>Summary</h3>
+        <ul>
+          <li class="item red">
+            <p class="item-name">
+              <img
+                src="./sources/assets/images/icon-reaction.svg"
+                alt="Reaction category icon for test summary"
+                class="item-icon"
+              />Reaction
+            </p>
+            <p class="item-score">80 <span>/ 100</span></p>
+          </li>
+          <li class="item yellow">
+            <p class="item-name">
+              <img
+                src="./sources/assets/images/icon-memory.svg"
+                alt="Memory category icon for test summary"
+                class="item-icon"
+              />Memory
+            </p>
+            <p class="item-score">92 <span>/ 100</span></p>
+          </li>
+          <li class="item green">
+            <p class="item-name">
+              <img
+                src="./sources/assets/images/icon-verbal.svg"
+                alt="Verbal category icon for test summary"
+                class="item-icon"
+              />Verbal
+            </p>
+            <p class="item-score">61 <span>/ 100</span></p>
+          </li>
+          <li class="item blue">
+            <p class="item-name">
+              <img
+                src="./sources/assets/images/icon-visual.svg"
+                alt="Visual category icon for test summary"
+                class="item-icon"
+              />Visual
+            </p>
+            <p class="item-score">72 <span>/ 100</span></p>
+          </li>
+        </ul>
+        <button aria-label="Continue to the next section">Continue</button>
+      </section>
+    </main>
   </body>
 </html>
