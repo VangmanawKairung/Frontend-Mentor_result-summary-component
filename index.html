@@ -4,11 +4,7 @@
     <title>Frontend Mentor | Results summary component</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Results summary component displaying user scores in various categories with a visually appealing layout."
-    />
-
+    <meta name="description" content="Results summary component page" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
@@ -24,63 +20,88 @@
     />
   </head>
   <body>
-    <main class="summary-container">
-      <section class="summary-result">
-        <h1>Your Result</h1>
-        <p class="summary-result-in-circle">76 <span>of 100</span></p>
-        <div>
-          <h2 class="summary-detail">Great</h2>
-          <p>
-            You scored higher than 65% of the people who have taken these tests.
-          </p>
+    <main class="card-container">
+      <section
+        class="result-summary"
+        role="region"
+        aria-labelledby="result-summary-title"
+      >
+        <h1 class="summary-topic">Your Result</h1>
+        <div class="result-score-box">
+          <p class="result-score">76</p>
+          <p class="total-score">of 100</p>
         </div>
+        <h2 class="result-feedback">Great</h2>
+        <p class="feedback-detail">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
       </section>
-      <section class="summary-category">
-        <h3>Summary</h3>
-        <ul>
-          <li class="item red">
-            <p class="item-name">
+
+      <section class="result-category" role="region">
+        <h2 class="category-topic">Summary</h2>
+        <ul class="category-container">
+          <li class="category">
+            <div class="category__head">
               <img
                 src="./sources/assets/images/icon-reaction.svg"
-                alt="Reaction category icon for test summary"
-                class="item-icon"
-              />Reaction
+                alt=""
+                aria-hidden="true"
+              />
+              <p class="category__name">Reaction</p>
+            </div>
+            <p class="category__score">
+              80 <span class="category__total-score">/ 100</span>
             </p>
-            <p class="item-score">80 <span>/ 100</span></p>
           </li>
-          <li class="item yellow">
-            <p class="item-name">
+          <li class="category">
+            <div class="category__head">
               <img
                 src="./sources/assets/images/icon-memory.svg"
-                alt="Memory category icon for test summary"
-                class="item-icon"
-              />Memory
+                alt=""
+                aria-hidden="true"
+              />
+              <p class="category__name">Memory</p>
+            </div>
+            <p class="category__score">
+              92 <span class="category__total-score">/ 100</span>
             </p>
-            <p class="item-score">92 <span>/ 100</span></p>
           </li>
-          <li class="item green">
-            <p class="item-name">
+          <li class="category">
+            <div class="category__head">
               <img
                 src="./sources/assets/images/icon-verbal.svg"
-                alt="Verbal category icon for test summary"
-                class="item-icon"
-              />Verbal
+                alt=""
+                aria-hidden="true"
+              />
+              <p class="category__name">Verbal</p>
+            </div>
+            <p class="category__score">
+              61 <span class="category__total-score">/ 100</span>
             </p>
-            <p class="item-score">61 <span>/ 100</span></p>
           </li>
-          <li class="item blue">
-            <p class="item-name">
+          <li class="category">
+            <div class="category__head">
               <img
                 src="./sources/assets/images/icon-visual.svg"
-                alt="Visual category icon for test summary"
-                class="item-icon"
-              />Visual
+                alt=""
+                aria-hidden="true"
+              />
+              <p class="category__name">Visual</p>
+            </div>
+            <p class="category__score">
+              72 <span class="category__total-score">/ 100</span>
             </p>
-            <p class="item-score">72 <span>/ 100</span></p>
           </li>
         </ul>
-        <button aria-label="Continue to the next section">Continue</button>
+        <button class="continue-btn" aria-label="Continue to the next section">
+          Continue
+        </button>
       </section>
     </main>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kairung Vangmanaw</a>.
+  </div> -->
   </body>
 </html>
