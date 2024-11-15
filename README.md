@@ -47,7 +47,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Result summary card using HTML and CSS (Sass)]([https://github.com/VangmanawKairung/Frontend-Mentor_result-summary-component](https://www.frontendmentor.io/solutions/result-summary-card-using-html-and-css-sass-XfakBL63ME))
+- Solution URL: [Result summary card using HTML and CSS (Sass)](https://www.frontendmentor.io/solutions/result-summary-card-using-html-and-css-sass-XfakBL63ME)
 - Live Site URL: [Frontend Mentor | Results summary component](https://vangmanawkairung.github.io/Frontend-Mentor_result-summary-component/)
 
 ## My process
