@@ -1,25 +1,22 @@
 # Frontend Mentor - Results summary component solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
-- [Frontend Mentor - Results summary component solution](#frontend-mentor---results-summary-component-solution)
-  - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
-      - [Mobile view](#mobile-view)
-      - [Desktop view](#desktop-view)
-      - [Active state](#active-state)
-    - [Links](#links)
-  - [My process](#my-process)
-    - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
-    - [Useful resources](#useful-resources)
-  - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -33,22 +30,20 @@ Users should be able to:
 
 ### Screenshot
 
-#### Mobile view
+![](./screenshot.jpg)
 
-![](./sources/screenshots/Mobile%20view.png)
+Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-#### Desktop view
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
 
-![](./sources/screenshots/Desktop%20view.png)
+Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
-#### Active state
-
-![](./sources/screenshots/Active%20state.png)
+**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Result summary card using HTML and CSS (Sass)](https://www.frontendmentor.io/solutions/result-summary-card-using-html-and-css-sass-XfakBL63ME)
-- Live Site URL: [Frontend Mentor | Results summary component](https://vangmanawkairung.github.io/Frontend-Mentor_result-summary-component/)
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -59,51 +54,59 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- Sass (Scss)
-- Media Queries
-- Typography
-- Gradient Background
-- Accessibility
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Styled Components](https://styled-components.com/) - For styles
+
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-During this "Results Summary Component" challenge, I learned how to combine Semantic HTML5, responsive design techniques, and Sass to create an accessible, visually appealing, and user-friendly component. One of my proudest achievements was utilizing CSS Grid to structure the layout and adapting it for mobile-first workflows with a smooth transition to desktop views using media queries. Additionally, I became more confident with using Sass mixins to simplify repetitive tasks, like setting element dimensions consistently across the layout:
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
+To see how you can add code snippets, see below:
+
+```html
+<h1>Some HTML code I'm proud of</h1>
 ```
-@mixin set-size($w, $h) {
-  width: $w;
-  height: $h;
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
+```js
+const proudOfThisFunc = () => {
+  console.log('🎉')
 }
 ```
 
-Another highlight was implementing gradient backgrounds to enhance visual appeal, such as the circular score box:
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-```
-div.result-score-box {
-  @include set-size(140px, 140px);
-  background-image: linear-gradient(
-    $violet-blue-circle -20%,
-    $persian-blue-circle 110%
-  );
-  border-radius: 50%;
-}
-```
-
-This challenge also strengthened my understanding of Flexbox and Grid working together to create adaptable layouts. It was rewarding to see how small details, like ARIA attributes for accessibility and hover effects for interactivity, came together to make the component functional and inclusive. Overall, I feel proud of the balance I achieved between design, responsiveness, and accessibility.
+**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-I plan to enhance the component by adding animations and transitions to improve user interactivity, such as smooth fades for the button hover states or subtle scaling for the score box. I also want to explore integrating JavaScript for dynamic functionality, like updating the scores based on user input or fetching data from an API. Additionally, I aim to further optimize accessibility by testing with screen readers and ensuring perfect compatibility across various browsers.
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+
+**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [JSON HTML](https://www.w3schools.com/js/js_json_html.asp) - This webpage shows how to use JSON file with HTML (via JavaScript).
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+
+**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Frontend Mentor - [@VangmanawKairung](https://www.frontendmentor.io/profile/VangmanawKairung)
-- GitHub - [VangmanawKairung](https://github.com/VangmanawKairung)
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+
+**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-I want to express my gratitude to Frontend Mentor for creating this engaging challenge, which helped me hone my skills in responsive design and accessibility. A big thanks to macOS for its clean interface that made previewing and adjusting element sizes easier, as well as VSCode and Chrome for providing an efficient development and debugging environment. I also appreciate the wealth of online resources and tools that supported me throughout this project, from Google Fonts for typography to Sass for streamlining my CSS workflow. These tools and platforms were instrumental in bringing this component to life.
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+
+**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

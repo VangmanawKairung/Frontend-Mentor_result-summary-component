@@ -1,107 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Frontend Mentor | Results summary component</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Results summary component page" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./sources/assets/images/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <main class="card-container">
-      <section
-        class="result-summary"
-        role="region"
-        aria-labelledby="result-summary-title"
-      >
-        <h1 class="summary-topic">Your Result</h1>
-        <div class="result-score-box">
-          <p class="result-score">76</p>
-          <p class="total-score">of 100</p>
-        </div>
-        <h2 class="result-feedback">Great</h2>
-        <p class="feedback-detail">
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-      <section class="result-category" role="region">
-        <h2 class="category-topic">Summary</h2>
-        <ul class="category-container">
-          <li class="category">
-            <div class="category__head">
-              <img
-                src="./sources/assets/images/icon-reaction.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              <p class="category__name">Reaction</p>
-            </div>
-            <p class="category__score">
-              80 <span class="category__total-score">/ 100</span>
-            </p>
-          </li>
-          <li class="category">
-            <div class="category__head">
-              <img
-                src="./sources/assets/images/icon-memory.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              <p class="category__name">Memory</p>
-            </div>
-            <p class="category__score">
-              92 <span class="category__total-score">/ 100</span>
-            </p>
-          </li>
-          <li class="category">
-            <div class="category__head">
-              <img
-                src="./sources/assets/images/icon-verbal.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              <p class="category__name">Verbal</p>
-            </div>
-            <p class="category__score">
-              61 <span class="category__total-score">/ 100</span>
-            </p>
-          </li>
-          <li class="category">
-            <div class="category__head">
-              <img
-                src="./sources/assets/images/icon-visual.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              <p class="category__name">Visual</p>
-            </div>
-            <p class="category__score">
-              72 <span class="category__total-score">/ 100</span>
-            </p>
-          </li>
-        </ul>
-        <button class="continue-btn" aria-label="Continue to the next section">
-          Continue
-        </button>
-      </section>
-    </main>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
 
-    <!-- <div class="attribution">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  Your Result
+  76
+  of 100
+
+  Great
+  You scored higher than 65% of the people who have taken these tests.
+  
+  Summary
+
+  Reaction
+  80 / 100
+
+  Memory
+  92 / 100
+
+  Verbal
+  61 / 100
+
+  Visual
+  72 / 100
+
+  Continue
+  
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Kairung Vangmanaw</a>.
-  </div> -->
-  </body>
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
 </html>
