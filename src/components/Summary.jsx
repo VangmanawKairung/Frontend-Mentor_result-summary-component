@@ -4,10 +4,10 @@ import IconVerbal from "../assets/icon-verbal.svg"
 import IconVisual from "../assets/icon-visual.svg"
 
 const RESULT_DATA = [
-  {title: "Reaction", score: 80, icon: IconReaction},
-  {title: "Memory", score: 92, icon: IconMemory},
-  {title: "Verbal", score: 61, icon: IconVerbal},
-  {title: "Visual", score: 73, icon: IconVisual},
+  {title: "Reaction", score: 80, icon: IconReaction, theme: "red"},
+  {title: "Memory", score: 92, icon: IconMemory, theme: "orange"},
+  {title: "Verbal", score: 61, icon: IconVerbal, theme: "green"},
+  {title: "Visual", score: 73, icon: IconVisual, theme: "blue"},
 ]
 
 const Summary = () => {
@@ -16,7 +16,7 @@ const Summary = () => {
       <h2 className="summary__title">Summary</h2>
       <ul className="summary__score-list">
         {RESULT_DATA.map((data) => (
-          <li className="summary__score-card" key={data.title}>
+          <li className={`summary__score-card summary__score-card--${data.theme}`} key={data.title}>
             <p className="summary__score-title">
               <img
                 src={data.icon}
